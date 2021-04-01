@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "183562803426",
+    "project_id": "clickbiuda-6d233",
+    "storage_bucket": "clickbiuda-6d233.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183562803426:android:c16ca1ba838f195e5f66bb",
+        "android_client_info": {
+          "package_name": "com.vhmappsolutions.clickbiuda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183562803426-gth4p6b7qnjeolpldvjksgmrm3dtl53d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbXlejM-pLZFyhYlq1Kv4wohJf_Ebb7ao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183562803426-gth4p6b7qnjeolpldvjksgmrm3dtl53d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
