@@ -1,6 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vhmappsolutions.clickbiuda">
         <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.FLASHLIGHT" />
 
    <application
         android:label="clickbiuda"
@@ -41,7 +46,7 @@
             android:name="flutterEmbedding"
             android:value="2" />
        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID"
-           android:value="ca-app-pub-3494378221005703~5839894087"/>
+           android:value="ca-app-pub-4154355254565780~6229720401"/>
 
     </application>
 </manifest>

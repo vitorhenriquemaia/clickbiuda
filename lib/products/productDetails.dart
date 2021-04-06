@@ -151,7 +151,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(top:10.0),
+                      padding: EdgeInsets.only(top: 10.0),
                       child: Center(child: checkForAd()),
                     ),
                     Padding(
@@ -173,8 +173,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                     ),
                     Padding(
                         padding: EdgeInsets.symmetric(
-                          vertical: 5,
-                        )),
+                      vertical: 5,
+                    )),
                     Text(
                       "Local de retirada do produto:",
                       style: TextStyle(
@@ -239,7 +239,17 @@ class _ProductDetailsState extends State<ProductDetails> {
                           ),
                         ),
                         onTap: () {
-                          _launchWhatsApp(_product.whatsapp);
+                          launchWhatsApp() async {
+                            final link = WhatsAppUnilink(
+                              phoneNumber: _product.whatsapp,
+                              text:
+                                  "Hey! I'm inquiring about the apartment listing",
+                            );
+                            // Convert the WhatsAppUnilink instance to a string.
+                            // Use either Dart's string interpolation or the toString() method.
+                            // The "launch" method is part of "url_launcher".
+                            await launch('$link');
+                          }
                         },
                       ),
                     ),
