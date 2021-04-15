@@ -217,45 +217,59 @@ class _ProductDetailsState extends State<ProductDetails> {
                       "${_product.phone}",
                       style: TextStyle(fontSize: 19),
                     ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(vertical: 16),
+                    ),
+                    Text(
+                      "WhatsApp:",
+                      style: TextStyle(
+                        fontSize: 21,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      "${_product.whatsapp}",
+                      style: TextStyle(fontSize: 19),
+                    ),
                   ],
                 ),
               ),
-              Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      child: GestureDetector(
-                        child: Container(
-                          child: Text(
-                            "WhatsApp",
-                            style: TextStyle(color: Colors.white, fontSize: 20),
-                          ),
-                          padding: EdgeInsets.all(16),
-                          margin: EdgeInsets.all(16),
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                            color: kPrimaryColor,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                        ),
-                        onTap: () {
-                          launchWhatsApp() async {
-                            final link = WhatsAppUnilink(
-                              phoneNumber: _product.whatsapp,
-                              text:
-                                  "Hey! I'm inquiring about the apartment listing",
-                            );
-                            // Convert the WhatsAppUnilink instance to a string.
-                            // Use either Dart's string interpolation or the toString() method.
-                            // The "launch" method is part of "url_launcher".
-                            await launch('$link');
-                          }
-                        },
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              // Row(
+              //   children: [
+              //     Expanded(
+              //       child: Container(
+              //         child: GestureDetector(
+              //           child: Container(
+              //             child: Text(
+              //               "WhatsApp",
+              //               style: TextStyle(color: Colors.white, fontSize: 20),
+              //             ),
+              //             padding: EdgeInsets.all(16),
+              //             margin: EdgeInsets.all(16),
+              //             alignment: Alignment.center,
+              //             decoration: BoxDecoration(
+              //               color: kPrimaryColor,
+              //               borderRadius: BorderRadius.circular(30),
+              //             ),
+              //           ),
+              //           onTap: () {
+              //             launchWhatsApp() async {
+              //               final link = WhatsAppUnilink(
+              //                 phoneNumber: _product.whatsapp,
+              //                 text:
+              //                     "Hey! Eu vi seu anúncio na #clickbiuda, vamos conversar?",
+              //               );
+              //               // Convert the WhatsAppUnilink instance to a string.
+              //               // Use either Dart's string interpolation or the toString() method.
+              //               // The "launch" method is part of "url_launcher".
+              //               await launch('$link');
+              //             }
+              //           },
+              //         ),
+              //       ),
+              //     ),
+              //   ],
+              // ),
             ],
           ),
         ],

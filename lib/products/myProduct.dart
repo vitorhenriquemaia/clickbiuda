@@ -92,7 +92,7 @@ class _MyProductState extends State<MyProduct> {
             case ConnectionState.active:
             case ConnectionState.done:
 
-              //Exibe mensagem de erro
+            //Exibe mensagem de erro
               if (snapshot.hasError) return Text("Erro ao carregar os dados!");
 
               QuerySnapshot querySnapshot = snapshot.data;
@@ -101,10 +101,10 @@ class _MyProductState extends State<MyProduct> {
                   itemCount: querySnapshot.docs.length,
                   itemBuilder: (_, indice) {
                     List<DocumentSnapshot> products =
-                        querySnapshot.docs.toList();
+                    querySnapshot.docs.toList();
                     DocumentSnapshot documentSnapshot = products[indice];
                     Product product =
-                        Product.fromDocumentSnapshot(documentSnapshot);
+                    Product.fromDocumentSnapshot(documentSnapshot);
 
                     return ProductCard(
                       product: product,
@@ -119,7 +119,7 @@ class _MyProductState extends State<MyProduct> {
                               return AlertDialog(
                                 title: Text("Confirmar"),
                                 content:
-                                    Text("Deseja realmente excluir o anúncio?"),
+                                Text("Deseja realmente excluir o anúncio?"),
                                 actions: <Widget>[
                                   TextButton(
                                     child: Text(

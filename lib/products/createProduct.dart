@@ -131,7 +131,6 @@ class _CreateProductState extends State<CreateProduct> {
     .get();
 
     Map<String, dynamic> data = snapshot.data();
-    _controllerName.text = data["Name"];
   }
 
   @override
